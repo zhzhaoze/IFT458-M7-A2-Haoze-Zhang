@@ -1,0 +1,28 @@
+extends baseTemplate
+
+block content 
+  h1 This is dynamic loan list Overview
+  <div class="">
+    <table class="table-header">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">loanType</th>
+          <th scope="col">loanNumber</th>
+          <th scope="col">Amount</th>
+          <th scope="col">interestRate</th>
+          <th scope="col">loanTermYears</th>
+        </tr>
+      </thead>
+      <tbody>
+        each loan in loans
+          <tr class="table-secondary">
+            <td>#{loan.Name}</td>
+            <td>#{loan.loanType}</td>
+            <td>#{loan.loanNumber}</td>
+            <td>#{loan.Amount}</td>
+            <td>#{loan.interestRate}</td>
+            <td>#{loan.loanTermYears}</td>
+          </tr>
+      </tbody>
+    </table>
