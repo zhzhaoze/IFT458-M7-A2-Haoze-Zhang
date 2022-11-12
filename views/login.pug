@@ -10,7 +10,6 @@ block content
               h4.card__sub-heading Login
               p.ard__text Please enter the following Details
               .card__data
-              h1 #{getUsername}
               form(action='/api/v1/users/login' method='post')
                 label(for='rmail') Email:
                 input(type='text' id='email' name='email')
